@@ -18,7 +18,7 @@ Claude Code (also the Code tab of the Claude desktop app), Codex and Antigravity
 
 ## Start
 
-1. Get this folder: download it from GitHub (Code ‚Ä∫ Download ZIP) or clone it.
+1. Get this folder: download it from GitHub (Code › Download ZIP) or clone it.
 2. Open it in your AI app.
 3. In NorthList Posts, open **Connect**, create a setup prompt and paste it into the AI app in this folder. It connects itself and asks a few setup questions.
 4. Each morning, type `daily`. The drafts show up on **Today** in a few minutes.
