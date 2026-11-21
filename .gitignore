@@ -1,0 +1,6 @@
+# The kit never stores personal data or tokens. These files would hold a token if an app wrote one here.
+.mcp.json
+.codex/
+.agents/
+.env
+.DS_Store
