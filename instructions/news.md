@@ -4,7 +4,7 @@ Read this file from `daily` or `write about <topic>`. It finds fresh, solid arti
 
 ## 1. Find candidates
 
-For each interest (start with the ones not used in the last few posts or in `waiting`):
+For each of the space's interests (start with the ones not used in the last few posts or in `waiting`). A space with no interests gets no NEWS: `daily` skips it and says so.
 1. Search the web for news from the last 2 days. Good places: Google News search, Hacker News, the official blog of the tool or company, and well-known sites in that field. For Hacker News, `https://hn.algolia.com/api/v1/search?query=<topic>&tags=story&numericFilters=created_at_i%3E<unix time 2 days ago>` lists stories posted to HN in that time, most popular first (keep `%3E`: a plain `>` is refused).
 2. Collect a few headlines with the article's own date and site. The date that counts is when the article was published, not when it was shared: open it to check, on the page itself (the date under the headline, or `datePublished` in the page source). Search results often show wrong dates and broken links, so never trust a date, number or link you have not seen on the page.
 

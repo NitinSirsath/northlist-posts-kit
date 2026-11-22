@@ -18,7 +18,7 @@ If the user typed `connect` without a prompt, tell them to open the Connect page
 
 ## 1. Which app is this?
 
-Say in one line which app you are running in: Claude Code (also the Code tab of the Claude desktop app), Codex (the CLI, the IDE extension or the ChatGPT desktop app), or Antigravity. If you cannot tell, ask the user once.
+Say in one line which app you are running in: Antigravity, Claude Code (also the Code tab of the Claude desktop app), or Codex (the CLI, the IDE extension or the ChatGPT desktop app). If you cannot tell, ask the user once.
 
 ## 2. Add the server to the app
 
@@ -62,9 +62,9 @@ In a few short lines, without the token:
   - Claude Code: open a new chat in this folder, because new servers load at the start of a chat.
   - Codex: restart the app (desktop: Restart; IDE: Restart extension; CLI: start a new session).
   - Antigravity: Refresh the MCP servers.
-- Then type `setup` to fill the profile (if the setup prompt asked for it), and `daily` each morning after that.
+- Their spaces are already set up in the app. Then `daily` each morning (or set it as a scheduled task if this app can run them, before the time in the setup prompt).
 - The first time each tool runs, the app asks. Allow it for good: "Yes, and don't ask again" in Claude Code, "Allow and don't ask me again" in Codex, "Always allow" in Antigravity.
 
-If the tools already work in this chat (some apps load new servers at once), go straight on with `instructions/setup.md`.
+If the tools already work in this chat (some apps load new servers at once), call `get_profile` and name the spaces you see, so the user knows it worked (the app also ticks "Connected" by itself).
 
 **Reconnect.** When a token expires or is revoked, the user creates a new setup prompt on the Connect page and pastes it here. The same steps replace the old token.
